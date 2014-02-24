@@ -1,0 +1,64 @@
+# Copyright (C) 2013 Developer
+# This file is distributed under the same license and copyright as the PMC Helpdesk package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PMC Helpdesk\n"
+"POT-Creation-Date: 2014-02-23 19:32-0800\n"
+"PO-Revision-Date: 2014-02-23 19:32-0800\n"
+"Last-Translator: Gabriel Koen <gkoen@pmc.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/class-pmc-helpdesk-default-form.php:92
+#, php-format
+msgid "[%s] Help request - %s priority"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk-default-form.php:197
+msgid "What problem did you experience?"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk-default-form.php:200
+msgid "Steps to reproduce?"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk-default-form.php:210
+msgid "Look into this when you get a chance."
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk-default-form.php:211
+msgid "This is impacting my work, but I am able to work around it."
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk-default-form.php:212
+msgid "This needs immediate attention; wake people up if necessary."
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:89
+msgid "Okay"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:123
+msgid "Help Desk"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:154
+msgid "Thank you, the support team has been notified."
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:188
+msgid "Send"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:188
+msgid "Cancel"
+msgstr ""
