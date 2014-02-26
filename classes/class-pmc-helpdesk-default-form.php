@@ -83,7 +83,7 @@ class PMC_Helpdesk_Default_Form {
 		if ( isset($fields['post_id']) ) {
 			$data['post_id'] = intval( $fields['post_id'] );
 			$data['post_link'] = site_url( '/?p=' . $data['post_id'] );
-			$data['post_admin_link'] = admin_url( 'post.php?post=' . $data['post_id'] . '&action=edit' );
+			$data['post_admin_link'] = get_edit_post_link( $data['post_id'], 'href' );
 			$post = get_post( $data['post_id'] );
 			if ( $post ) {
 				$data['post_title'] = $post->post_type;
