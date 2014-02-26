@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PMC Helpdesk\n"
-"POT-Creation-Date: 2014-02-23 19:32-0800\n"
-"PO-Revision-Date: 2014-02-23 19:32-0800\n"
+"POT-Creation-Date: 2014-02-26 13:54-0800\n"
+"PO-Revision-Date: 2014-02-26 14:34-0800\n"
 "Last-Translator: Gabriel Koen <gkoen@pmc.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -18,28 +18,28 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../classes/class-pmc-helpdesk-default-form.php:92
+#: ../classes/class-pmc-helpdesk-default-form.php:131
 #, php-format
 msgid "[%s] Help request - %s priority"
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk-default-form.php:197
+#: ../classes/class-pmc-helpdesk-default-form.php:225
 msgid "What problem did you experience?"
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk-default-form.php:200
+#: ../classes/class-pmc-helpdesk-default-form.php:228
 msgid "Steps to reproduce?"
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk-default-form.php:210
+#: ../classes/class-pmc-helpdesk-default-form.php:238
 msgid "Look into this when you get a chance."
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk-default-form.php:211
+#: ../classes/class-pmc-helpdesk-default-form.php:239
 msgid "This is impacting my work, but I am able to work around it."
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk-default-form.php:212
+#: ../classes/class-pmc-helpdesk-default-form.php:240
 msgid "This needs immediate attention; wake people up if necessary."
 msgstr ""
 
@@ -47,8 +47,14 @@ msgstr ""
 msgid "Okay"
 msgstr ""
 
-#: ../classes/class-pmc-helpdesk.php:123
+#: ../classes/class-pmc-helpdesk.php:122
 msgid "Help Desk"
+msgstr ""
+
+#: ../classes/class-pmc-helpdesk.php:145
+msgid ""
+"Something went wrong. Please contact support through your normal channels "
+"and let them know about this problem."
 msgstr ""
 
 #: ../classes/class-pmc-helpdesk.php:154
