@@ -52,6 +52,10 @@ pmc_helpdesk = {
 	},
 
 	handle_response : function( response ) {
+		// Bogus element used to sanitize text
+		// Usage: sanitizer.text( "untrusted string" ).html() to convert to escaped text.  There are probably better ways to do this, but this gets around a lot of browser-specific caveats without a lot of effort/testing.
+		var sanitizer = jQuery( '<span />' );
+
 		pmc_helpdesk.hide_activity_view();
 
 		var response_class, response_html;
@@ -60,7 +64,7 @@ pmc_helpdesk = {
 		} else {
 			response_class = 'error';
 		}
-		response_html = '<p class="' + response_class + '">' + response.data + '</p>' + '<p><input type="submit" onclick="pmc_helpdesk.close_form();" class="button button-primary" value="' + pmc_helpdesk_vars.affirm + '" /></p>';
+		response_html = '<p class="' + response_class + '">' + sanitizer.text( response.data ).html() + '</p>' + '<p><input type="submit" onclick="pmc_helpdesk.close_form();" class="button button-primary" value="' + pmc_helpdesk_vars.affirm + '" /></p>';
 		jQuery( 'form[name="pmc-helpdesk-form"]' ).html( response_html );
 
 		// (Re-)attach event handler to the new submit button
