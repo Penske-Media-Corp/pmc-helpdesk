@@ -38,11 +38,11 @@ Action reference
 
 Implement a form handler for intercepting POST requests via ajax.  Used in concert with the `pmc-helpdesk-form-fields` filter.
 
-		do_action( 'pmc-helpdesk-form-handler', array(
-			'fields' => $fields,
-			'success' => &$success,
-			'response' => &$response,
-		) );
+	do_action( 'pmc-helpdesk-form-handler', array(
+		'fields' => $fields,
+		'success' => &$success,
+		'response' => &$response,
+	) );
 
 Notes:
 
@@ -97,19 +97,19 @@ Default form and form handler
 
 `$headers` is passed directly to the `wp_mail()` function.
 
-		add_filter( 'pmc-helpdesk-form-headers', function( $headers ) {
-			$headers['X-Accept-Language'] = 'en-us, en';
-			return $headers;
-		} );
+	add_filter( 'pmc-helpdesk-form-headers', function( $headers ) {
+		$headers['X-Accept-Language'] = 'en-us, en';
+		return $headers;
+	} );
 
 ### Add attachments to the e-mail
 
 `$attachments` is passed directly to the `wp_mail()` function.
 
-		add_filter( 'pmc-helpdesk-form-attachments', function( $attachments ) {
-			$attachments[] = ABSPATH . '/wp-includes/images/blank.gif';
-			return $attachments;
-		} );
+	add_filter( 'pmc-helpdesk-form-attachments', function( $attachments ) {
+		$attachments[] = ABSPATH . '/wp-includes/images/blank.gif';
+		return $attachments;
+	} );
 
 Handling form errors
 --------------------
