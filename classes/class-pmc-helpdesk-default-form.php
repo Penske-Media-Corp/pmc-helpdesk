@@ -133,7 +133,7 @@ class PMC_Helpdesk_Default_Form {
 
 		$message = '';
 		foreach ( $fields as $key => $value ) {
-			$message .= $key . ': ' . $value . "\r\n\r\n";
+			$message .= $key . ': ' . $value . PHP_EOL . PHP_EOL;
 		}
 		$message = apply_filters( 'pmc-helpdesk-form-message-body', $message, $fields );
 

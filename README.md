@@ -87,7 +87,7 @@ Default form and form handler
 
 	add_filter( 'pmc-helpdesk-form-message-body', function( $message, $fields ) {
 		if ( 'urgent' === $fields['priority'] ) {
-			$message = 'It is I, Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England!' . "\r\n" . '...and this is my trusty servant Patsy. We have ridden the length and breadth of the land in search of knights who will join me in my court at Camelot. I must speak with your lord and master.' . "\r\n" . $message;
+			$message = 'It is I, Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England!' . PHP_EOL" . '...and this is my trusty servant Patsy. We have ridden the length and breadth of the land in search of knights who will join me in my court at Camelot. I must speak with your lord and master.' . PHP_EOL . $message;
 		}
 
 		return $message;
