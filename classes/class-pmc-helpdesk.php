@@ -116,7 +116,7 @@ class PMC_Helpdesk {
 	 * Add the form node to the admin bar
 	 * @see PMC_Helpdesk::admin_bar_init()
 	 */
-	public function admin_bar_menu() {
+	public function admin_bar_menu( $wp_admin_bar ) {
 		$menu_args = array(
 			'id' => 'pmc-helpdesk',
 			'title' => __('Help Desk', 'pmc-helpdesk'),
@@ -131,7 +131,7 @@ class PMC_Helpdesk {
 
 		$menu_args = apply_filters( 'pmc-helpdesk-menu-args', $menu_args );
 
-		$GLOBALS['wp_admin_bar']->add_node( $menu_args );
+		$wp_admin_bar->add_node( $menu_args );
 	}
 
 	/**
