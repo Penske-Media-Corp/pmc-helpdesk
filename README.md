@@ -25,6 +25,12 @@ Render form field HTML in the menu node for the user to fill out or interact wit
 
 	echo apply_filters( 'pmc-helpdesk-form-fields', '' );
 
+### pmc-helpdesk-form-error
+
+The only time we'll show an error is if there's a technical problem — e.g., the ajax response doesn't have all the data or proper permissions.
+
+	$error_response = apply_filters( 'pmc-helpdesk-form-error', __( 'Something went wrong. Please contact support through your normal channels and let them know about this problem.', 'pmc-helpdesk' ) );
+
 Action reference
 ----------------
 

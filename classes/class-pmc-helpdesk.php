@@ -142,7 +142,8 @@ class PMC_Helpdesk {
 	public function ajax_process_form() {
 		// Bail early if we don't have expected data or if the current user doesn't have the right permissions
 		if ( ! isset($_POST['fields']) || ! current_user_can( 'edit_posts' ) ) {
-			return;
+			$error_response = apply_filters( 'pmc-helpdesk-form-error', __( 'Something went wrong. Please contact support through your normal channels and let them know about this problem.', 'pmc-helpdesk' ) );
+			wp_send_json_error( $error_response );
 		}
 
 		check_ajax_referer( 'pmc-helpdesk-form', 'pmc_helpdesk_nonce' );
