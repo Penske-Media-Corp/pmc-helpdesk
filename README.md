@@ -98,7 +98,10 @@ Default form and form handler
 `$headers` is passed directly to the `wp_mail()` function.
 
 	add_filter( 'pmc-helpdesk-form-headers', function( $headers ) {
-		$headers['X-Accept-Language'] = 'en-us, en';
+		// Default "From" should is the end user's e-mail address, which makes replies and filtering easy.
+		// We're going to add a "Sender" header to the e-mail so that sites can use a valid sender to alleviate spam.
+		$headers['Sender'] = 'do-not-reply@pmc.com';
+
 		return $headers;
 	} );
 

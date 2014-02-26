@@ -137,20 +137,7 @@ class PMC_Helpdesk_Default_Form {
 		}
 		$message = apply_filters( 'pmc-helpdesk-form-message-body', $message, $fields );
 
-		// Default "From" should be the end user's e-mail address.
-		// We're going to add a "Sender" header to the e-mail so that sites can use a valid sender to alleviate spam. To that end, we'll get the default Sender the way wp_mail() gets the default "From", then apply filters so plugins can override it with a valid Sender address.  We're maintaining the "wp_mail_from" for the Sender under the assumption that professional WordPress installs will be hooking into that filter already with valid settings.
-		// Get the site domain and get rid of www.
-		$sitename = strtolower( $_SERVER['SERVER_NAME'] );
-		if ( substr( $sitename, 0, 4 ) == 'www.' ) {
-			$sitename = substr( $sitename, 4 );
-		}
-		$default_from = 'wordpress@' . $sitename;
-
-		$headers = array(
-			'Sender' => apply_filters( 'wp_mail_from' , $default_from ),
-		);
-
-		$headers = apply_filters( 'pmc-helpdesk-form-headers', $headers );
+		$headers = apply_filters( 'pmc-helpdesk-form-headers', array() );
 
 		$attachments = apply_filters( 'pmc-helpdesk-form-attachments', array() );
 
