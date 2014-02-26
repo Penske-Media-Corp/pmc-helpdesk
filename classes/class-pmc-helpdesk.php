@@ -140,8 +140,8 @@ class PMC_Helpdesk {
 	 * @see PMC_Helpdesk::form_html()
 	 */
 	public function ajax_process_form() {
-		// Bail early if we don't have expected data
-		if ( ! isset($_POST['fields']) ) {
+		// Bail early if we don't have expected data or if the current user doesn't have the right permissions
+		if ( ! isset($_POST['fields']) || ! current_user_can( 'edit_posts' ) ) {
 			return;
 		}
 
