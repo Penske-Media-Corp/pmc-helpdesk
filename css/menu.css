@@ -1,5 +1,6 @@
 #wp-admin-bar-pmc-helpdesk {
 	text-align: right;
+	width: auto;
 }
 
 #pmc-helpdesk-form-wrapper {
@@ -13,6 +14,11 @@
 #pmc-helpdesk-form-wrapper form p {
 	line-height: 1.2em;
 	padding: 0 0 0.5em;
+}
+
+#pmc-helpdesk-form-wrapper p.error,
+#pmc-helpdesk-form-wrapper p.success {
+	max-width: 20em;
 }
 
 #pmc-helpdesk-form-wrapper form textarea,
