@@ -105,7 +105,7 @@ class PMC_Helpdesk {
 	 * Tell the admin bar that we're going to be doing stuff
 	 */
 	public function admin_bar_init() {
-		if ( ! is_user_logged_in() || ! is_admin_bar_showing() || $this->is_wp_login() ) {
+		if ( ! current_user_can( 'edit_posts' ) || ! is_admin_bar_showing() || $this->is_wp_login() ) {
 			return;
 		}
 
